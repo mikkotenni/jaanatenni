@@ -15,4 +15,6 @@ export const colors = {
   color4: "#dcc8bc", // Light grayish orange
   color2: "#eae1d0", // Light grayish orange
   color5: "#e0edee", // Light grayish cyan
+  fontColor: "#2b2b2b",
+  backgroundColor: "#fffdf9",
 };
