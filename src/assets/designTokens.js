@@ -1,5 +1,5 @@
 /**
- * Colors used in the app.
+ * Colors
  * @type {Object}
  * @property {string} color1 - Very dark grayish blue
  * @property {string} color2 - Light grayish orange
@@ -17,4 +17,23 @@ export const colors = {
   color5: "#e0edee", // Light grayish cyan
   fontColor: "#2b2b2b",
   backgroundColor: "#fffdf9",
+};
+
+/**
+ * Breakpoints for responsive design. Extra small devices (mobile phones) are
+ * up to 575px, small devices (small tablets and large phones) are up to 767px,
+ * medium devices (tablets) are up to 991px, large devices (small laptops,
+ * desktops) are up to 1199px, and extra large devices (large laptops, desktops)
+ * are 1200px and above.
+ * @type {Object}
+ * @property {string} sm - Small devices
+ * @property {string} md - Medium devices
+ * @property {string} lg - Large devices
+ * @property {string} xl - Extra large devices
+ */
+export const breakpoints = {
+  sm: "576px",
+  md: "768px",
+  lg: "992px",
+  xl: "1200px",
 };
