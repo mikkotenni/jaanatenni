@@ -2,6 +2,7 @@ import { Global, css } from "@emotion/react";
 import { colors } from "./assets/designTokens";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Hero from "./components/Hero";
 
 const { fontColor, backgroundColor } = colors;
 
@@ -25,7 +26,7 @@ function App() {
     <>
       <Global styles={globalStyles} />
       <Header />
-      <p>Hello World!</p>
+      <Hero />
       <Footer />
     </>
   );
