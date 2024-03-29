@@ -1,6 +1,16 @@
+import styled from "@emotion/styled";
+
+const Container = styled.section`
+  margin-top: 2rem;
+
+  & > h2:first-of-type {
+    margin-top: 0;
+  }
+`;
+
 export default function SelfIntroduction() {
   return (
-    <section id="jaana">
+    <Container id="jaana">
       <h2>Jaana</h2>
       <p>
         Hei! Olen lyhytterapeutiksi opiskeleva sairaanhoitaja sekä
@@ -9,6 +19,6 @@ export default function SelfIntroduction() {
         mielenkiinnon kohteena ja lisäkoulutuksen aiheena on ollut trauma- ja
         kiintymyssuhdetyöskentely.
       </p>
-    </section>
+    </Container>
   );
 }

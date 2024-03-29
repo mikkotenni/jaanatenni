@@ -1,6 +1,16 @@
+import styled from "@emotion/styled";
+
+const Container = styled.section`
+  margin-top: 2rem;
+
+  & > h2:first-of-type {
+    margin-top: 0;
+  }
+`;
+
 export default function TherapyConcept() {
   return (
-    <section id="terapia">
+    <Container id="terapia">
       <h2>Terapia</h2>
       <p>
         Lyhytterapia on tutkitusti tehokas tapa tukea mielenterveyttä
@@ -19,6 +29,6 @@ export default function TherapyConcept() {
         Terapiaan voit tulla yksin, kumppanisi kanssa tai vaikka koko perheen
         voimin.
       </p>
-    </section>
+    </Container>
   );
 }

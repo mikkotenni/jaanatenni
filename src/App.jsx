@@ -8,6 +8,9 @@ import Prices from "./components/Prices";
 import TherapyConcept from "./components/TherapyConcept";
 import styled from "@emotion/styled";
 import Jaana from "./assets/jaana.webp";
+import JaanaJaTinka from "./assets/jaanajatinka.webp";
+import ContactInformation from "./components/ContactInformation";
+import Picture from "./components/Picture";
 
 const { fontColor, backgroundColor } = colors;
 const { md, xl } = breakpoints;
@@ -26,12 +29,16 @@ const globalStyles = css`
     margin: 0;
   }
 `;
+const Container = styled.div`
+  max-width: 1800px;
+  margin: 0 auto;
+`;
 const GridContainer = styled.div`
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 1rem;
+  gap: 1rem;
 
   img {
     width: 100%;
@@ -41,14 +48,22 @@ const GridContainer = styled.div`
   @media (min-width: ${md}) {
     margin: 2rem 4rem 4rem;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 4rem;
+    gap: 4rem;
   }
   @media (min-width: ${xl}) {
     grid-template-columns: 1fr 1fr 1fr;
-    max-width: 1800px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+  }
+`;
+const JaanaJaTinkaSmXl = styled.div`
+  @media (min-width: ${md}) and (max-width: ${xl}) {
+    display: none;
+  }
+`;
+const JaanaJaTinkaMdLg = styled.div`
+  display: none;
+
+  @media (min-width: ${md}) and (max-width: ${xl}) {
+    display: block;
   }
 `;
 
@@ -58,16 +73,27 @@ function App() {
       <Global styles={globalStyles} />
       <Header />
       <Hero />
-      <GridContainer>
-        <div>
-          <SelfIntroduction />
-          <img src={Jaana} alt="Jaana" />
-        </div>
-        <div>
-          <TherapyConcept />
-          <Prices />
-        </div>
-      </GridContainer>
+      <Container>
+        <GridContainer>
+          <div>
+            <SelfIntroduction />
+            <Picture imageSrc={Jaana} altText="Jaana" />
+          </div>
+          <div>
+            <TherapyConcept />
+            <Prices />
+          </div>
+          <div>
+            <JaanaJaTinkaSmXl>
+              <Picture imageSrc={JaanaJaTinka} altText="Jaana ja Tinka" />
+            </JaanaJaTinkaSmXl>
+            <ContactInformation />
+          </div>
+          <JaanaJaTinkaMdLg>
+            <Picture imageSrc={JaanaJaTinka} altText="Jaana ja Tinka" />
+          </JaanaJaTinkaMdLg>
+        </GridContainer>
+      </Container>
       <Footer />
     </>
   );
