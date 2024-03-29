@@ -1,8 +1,5 @@
 import styled from "@emotion/styled";
 import { breakpoints } from "../assets/designTokens";
-import Mailto from "./reachOutLinks/Mailto";
-import Tel from "./reachOutLinks/Tel";
-import WhatsApp from "./reachOutLinks/WhatsApp";
 
 const { md, lg } = breakpoints;
 
