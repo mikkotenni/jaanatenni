@@ -7,6 +7,12 @@ const { md } = breakpoints;
 const Container = styled.figure`
   margin: 0;
   margin-top: 2rem;
+
+  img {
+    width: 100%;
+    aspect-ratio: 1 / 1.5;
+    height: auto;
+  }
 `;
 
 /**

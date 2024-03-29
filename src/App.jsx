@@ -42,11 +42,6 @@ const GridContainer = styled.div`
   grid-template-columns: 1fr;
   gap: 1rem;
 
-  img {
-    width: 100%;
-    height: auto;
-  }
-
   @media (min-width: ${md}) {
     margin: 2rem 4rem 4rem;
     grid-template-columns: 1fr 1fr;
