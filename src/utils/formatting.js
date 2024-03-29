@@ -26,8 +26,26 @@ export function formatFinnishPhoneNumber(phoneNumber) {
  * @returns {string} as formatted price (e.g. "123,45 €" or "123,45 $")
  */
 export function formatCurrency(price, currency) {
-  return new Intl.NumberFormat("fi-FI", {
-    style: "currency",
-    currency: currency,
-  }).format(price);
+  if (isNaN(price)) {
+    return "";
+  }
+  const currencies = [
+    "USD",
+    "EUR",
+    "GBP",
+    "JPY",
+    "CNY",
+    "INR",
+    "BRL",
+    "ZAR",
+    "AUD",
+    "NZD",
+    "CAD",
+  ];
+  let obj = {};
+  if (currencies.includes(currency)) {
+    obj.currency = currency;
+    obj.style = "currency";
+  }
+  return new Intl.NumberFormat("fi-FI", obj).format(price);
 }
