@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
 import { colors } from "../../assets/designTokens";
-import { contactInformation } from "../../../config";
+import { reachOutLinks } from "../../../config";
 
-const { email } = contactInformation;
+const { email } = reachOutLinks;
 const href = `mailto:${email}`;
 
 const Container = styled.a`

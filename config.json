@@ -1,7 +1,12 @@
 {
-  "contactInformation": {
+  "reachOutLinks": {
     "phone": "+358442350334",
     "email": "lyhytterapia@jaanatenni.fi"
+  },
+  "prices": {
+    "price": 49,
+    "currency": "EUR",
+    "therapySessionDuration": "45 min"
   },
   "siteSettings": {}
 }

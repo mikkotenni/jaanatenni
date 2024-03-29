@@ -1,7 +1,10 @@
 import styled from "@emotion/styled";
 import { colors } from "../assets/designTokens";
+import { prices } from "../../config.json";
+import { formatCurrency } from "../utils/formatting";
 
 const { tagColor } = colors;
+const { price, currency, therapySessionDuration } = prices;
 
 const Tag = styled.h4`
   margin: 0;
@@ -26,7 +29,8 @@ export default function Prices() {
       <h3>Hinnat ja maksutavat</h3>
       <Tag>Nyt opiskelijahinta</Tag>
       <HeroText>
-        49,00 €<span>/h (sis. alv 24%)</span>
+        {formatCurrency(price, currency)}
+        <span>/{therapySessionDuration} (sis. alv 24%)</span>
       </HeroText>
       <p>Maksutavat MobilePay, tilisiirto ja käteinen.</p>
       <p>Varaa ilmainen 15 minuutin tutustuminen.</p>

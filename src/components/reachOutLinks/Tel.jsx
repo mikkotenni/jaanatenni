@@ -1,9 +1,9 @@
 import styled from "@emotion/styled";
 import { colors } from "../../assets/designTokens";
-import { contactInformation } from "../../../config";
+import { reachOutLinks } from "../../../config";
 import { formatFinnishPhoneNumber } from "../../utils/formatting";
 
-const { phone } = contactInformation;
+const { phone } = reachOutLinks;
 const href = `tel:${phone}`;
 
 const Container = styled.a`
