@@ -6,6 +6,9 @@
  * @property {string} color3 - Grayish blue
  * @property {string} color4 - Light grayish orange
  * @property {string} color5 - Light grayish cyan
+ * @property {string} fontColor - Font color
+ * @property {string} backgroundColor - Background color
+ * @property {string} tagColor - Tag color
  * @example
  * import { colors } from './src/assets/colors';
  */
@@ -17,6 +20,7 @@ export const colors = {
   color5: "#e0edee", // Light grayish cyan
   fontColor: "#2b2b2b",
   backgroundColor: "#fffdf9",
+  tagColor: "#ffaf38",
 };
 
 /**
