@@ -8,7 +8,9 @@ import Prices from "./components/Prices";
 import TherapyConcept from "./components/TherapyConcept";
 import styled from "@emotion/styled";
 import Jaana from "./assets/jaana.webp";
+import JaanaMobile from "./assets/jaanamobile.webp";
 import JaanaJaTinka from "./assets/jaanajatinka.webp";
+import JaanaJaTinkaMobile from "./assets/jaanajatinkamobile.webp";
 import ContactInformation from "./components/ContactInformation";
 import Picture from "./components/Picture";
 
@@ -77,7 +79,7 @@ function App() {
         <GridContainer>
           <div>
             <SelfIntroduction />
-            <Picture imageSrc={Jaana} altText="Jaana" />
+            <Picture mobileSrc={JaanaMobile} src={Jaana} alt="Jaana" />
           </div>
           <div>
             <TherapyConcept />
@@ -85,12 +87,20 @@ function App() {
           </div>
           <div>
             <JaanaJaTinkaSmXl>
-              <Picture imageSrc={JaanaJaTinka} altText="Jaana ja Tinka" />
+              <Picture
+                mobileSrc={JaanaJaTinkaMobile}
+                src={JaanaJaTinka}
+                alt="Jaana ja terapiakoira Tinka"
+              />
             </JaanaJaTinkaSmXl>
             <ContactInformation />
           </div>
           <JaanaJaTinkaMdLg>
-            <Picture imageSrc={JaanaJaTinka} altText="Jaana ja Tinka" />
+            <Picture
+              mobileSrc={JaanaJaTinkaMobile}
+              src={JaanaJaTinka}
+              alt="Jaana ja terapiakoira Tinka"
+            />
           </JaanaJaTinkaMdLg>
         </GridContainer>
       </Container>
