@@ -3,6 +3,10 @@ import { colors } from "./assets/designTokens";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
+import SelfIntroduction from "./components/SelfIntroduction";
+import Prices from "./components/Prices";
+import TherapyConcept from "./components/TherapyConcept";
+import styled from "@emotion/styled";
 
 const { fontColor, backgroundColor } = colors;
 
@@ -20,6 +24,10 @@ const globalStyles = css`
     margin: 0;
   }
 `;
+const Container = styled.div`
+  margin-left: 1rem;
+  margin-right: 1rem;
+`;
 
 function App() {
   return (
@@ -27,6 +35,11 @@ function App() {
       <Global styles={globalStyles} />
       <Header />
       <Hero />
+      <Container>
+        <SelfIntroduction />
+        <TherapyConcept />
+        <Prices />
+      </Container>
       <Footer />
     </>
   );

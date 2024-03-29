@@ -3,7 +3,7 @@ import { breakpoints, colors } from "../assets/designTokens";
 import Mailto from "./reachOutLinks/Mailto";
 import Tel from "./reachOutLinks/Tel";
 import WhatsApp from "./reachOutLinks/WhatsApp";
-import chaiseLongue from "../assets/chaise_longue.webp";
+import chaiseLongue from "../assets/chaiselongue.webp";
 
 const { md } = breakpoints;
 const { color1, color2, color3, color5 } = colors;
