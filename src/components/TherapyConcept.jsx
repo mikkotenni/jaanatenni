@@ -1,6 +1,6 @@
 export default function TherapyConcept() {
   return (
-    <section>
+    <section id="terapia">
       <h2>Terapia</h2>
       <p>
         Lyhytterapia on tutkitusti tehokas tapa tukea mielenterveyttä

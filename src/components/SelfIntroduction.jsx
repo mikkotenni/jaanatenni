@@ -1,6 +1,6 @@
 export default function SelfIntroduction() {
   return (
-    <section>
+    <section id="jaana">
       <h2>Jaana</h2>
       <p>
         Hei! Olen lyhytterapeutiksi opiskeleva sairaanhoitaja sekä
