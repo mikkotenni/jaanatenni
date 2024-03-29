@@ -1,9 +1,9 @@
 import styled from "@emotion/styled";
 import { colors } from "../../assets/designTokens";
 import { contactInformation } from "../../../config";
+import { formatFinnishPhoneNumber } from "../../utils/formatting";
 
 const { phone } = contactInformation;
-
 const href = `tel:${phone}`;
 
 const Container = styled.a`
@@ -20,7 +20,7 @@ export default function Tel() {
   return (
     <Container href={href}>
       <span className="material-symbols-outlined"> call </span>
-      {phone}
+      {formatFinnishPhoneNumber(phone)}
     </Container>
   );
 }
