@@ -1,10 +1,12 @@
 import styled from "@emotion/styled";
 import { colors } from "../../assets/designTokens";
+import { contactInformation } from "../../../config";
 
-const { color1 } = colors;
+const { email } = contactInformation;
+const href = `mailto:${email}`;
 
 const Container = styled.a`
-  color: ${color1};
+  color: ${colors.color1};
   text-decoration: none;
 
   .material-symbols-outlined {
@@ -15,9 +17,9 @@ const Container = styled.a`
 
 export default function Mailto() {
   return (
-    <Container href="mailto:lyhytterapia@jaanatenni.fi">
+    <Container href={href}>
       <span className="material-symbols-outlined"> mail </span>
-      lyhytterapia@jaanatenni.fi
+      {email}
     </Container>
   );
 }
