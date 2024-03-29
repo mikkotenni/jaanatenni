@@ -29,7 +29,7 @@ export default function Picture(props) {
     <Container>
       <picture>
         <source media={`(min-width: ${md})`} srcSet={src} />
-        <img src={mobileSrc} alt={alt} />
+        <img src={mobileSrc} alt={alt} loading="lazy" />
       </picture>
     </Container>
   );
