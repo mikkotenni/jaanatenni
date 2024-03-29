@@ -1,12 +1,8 @@
 import styled from "@emotion/styled";
 import { colors } from "../../assets/designTokens";
 import { contactInformation } from "../../../config";
-import { PhoneNumberUtil, PhoneNumberFormat } from 'google-libphonenumber';
 
 const { phone } = contactInformation;
-const phoneUtil = PhoneNumberUtil.getInstance();
-const phoneNumber = phoneUtil.parse(phone, 'FI');
-const formattedNumber = phoneUtil.format(phoneNumber, PhoneNumberFormat.NATIONAL);
 
 const href = `tel:${phone}`;
 
@@ -24,7 +20,7 @@ export default function Tel() {
   return (
     <Container href={href}>
       <span className="material-symbols-outlined"> call </span>
-      {formattedNumber}
+      {phone}
     </Container>
   );
 }
