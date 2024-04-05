@@ -19,7 +19,7 @@ const Container = styled.section`
 
 export default function TherapyConcept() {
   return (
-    <Container id="terapia">
+    <Container id="lyhytterapia">
       <h2>Lyhytterapia</h2>
       <p>
         Lyhytterapia on tutkitusti tehokas tapa tukea mielenterveyttä

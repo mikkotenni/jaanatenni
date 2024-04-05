@@ -34,7 +34,7 @@ export default function Header() {
             <a href="#jaana">Jaana</a>
           </li>
           <li>
-            <a href="#terapia">Terapia</a>
+            <a href="#lyhytterapia">Lyhytterapia</a>
           </li>
           <li>
             <a href="#yhteystiedot">Yhteystiedot</a>
