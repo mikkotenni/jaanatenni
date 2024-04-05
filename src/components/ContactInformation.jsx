@@ -17,8 +17,7 @@ export default function ContactInformation() {
     <Container id="yhteystiedot">
       <h2>Yhteystiedot</h2>
       <p>
-        Järjestän terapiatapaamisemme etäyhteydellä, luonasi tai
-        kotivastaanotollani{" "}
+        Kotivastaanottoni sijaitsee{" "}
         <a href="https://maps.app.goo.gl/bd4bLoW2MFQqgumn7" target="_blank">
           Mäntsälässä
         </a>{" "}
