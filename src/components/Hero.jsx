@@ -38,23 +38,8 @@ const Container = styled.section`
     }
   }
 
-  p {
-    background-color: ${color5};
-    padding: 1rem 1.5rem;
-    display: inline-block;
-    max-width: 900px;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    font-weight: 600;
-    margin-left: 3rem;
-    margin-top: 0;
-    margin-bottom: 0.75rem;
-    color: ${color1};
-
-    @media (min-width: ${md}) {
-      font-size: 1.25rem;
-    }
+  address {
+    font-style: normal;
 
     & a {
       display: block;
@@ -72,6 +57,25 @@ const Container = styled.section`
       }
     }
   }
+
+  p {
+    background-color: ${color5};
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    max-width: 900px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    font-weight: 600;
+    margin-left: 3rem;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    color: ${color1};
+
+    @media (min-width: ${md}) {
+      font-size: 1.25rem;
+    }
+  }
 `;
 
 export default function Hero() {
@@ -86,13 +90,13 @@ export default function Hero() {
           tutustuminen!
         </p>
       </div>
-      <div>
+      <address>
         <p>
           <WhatsApp />
           <Tel />
           <Mailto />
         </p>
-      </div>
+      </address>
     </Container>
   );
 }

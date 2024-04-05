@@ -3,8 +3,9 @@ import Tel from "./reachOutLinks/Tel";
 import WhatsApp from "./reachOutLinks/WhatsApp";
 import styled from "@emotion/styled";
 
-const Container = styled.section`
+const Container = styled.address`
   margin-top: 2rem;
+  font-style: normal;
 
   & > h2:first-of-type {
     margin-top: 0;
