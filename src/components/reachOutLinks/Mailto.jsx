@@ -18,7 +18,7 @@ const Container = styled.a`
 export default function Mailto() {
   return (
     <Container href={href}>
-      <span className="material-symbols-outlined"> mail </span>
+      <span className="material-symbols-outlined" aria-label="lähetä sähköpostia"> mail </span>
       {email}
     </Container>
   );

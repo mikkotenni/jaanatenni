@@ -19,7 +19,7 @@ const Container = styled.a`
 export default function Tel() {
   return (
     <Container href={href}>
-      <span className="material-symbols-outlined"> call </span>
+      <span className="material-symbols-outlined" aria-label="soita"> call </span>
       {formatFinnishPhoneNumber(phone)}
     </Container>
   );
