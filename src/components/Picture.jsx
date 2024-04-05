@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import styled from "@emotion/styled";
 import PropTypes from "prop-types";
 import { breakpoints } from "../assets/designTokens";
@@ -15,21 +16,36 @@ const Container = styled.figure`
   }
 `;
 
-/**
- * Renders an image element with the given source path and alternative text.
- * @param {Object} props
- * @param {string} props.mobileSrc - The source path of the image for small screens.
- * @param {string} props.src - The source path of the image.
- * @param {string} props.alt - The alternative text of the image.
- * @returns {JSX.Element}
- */
 export default function Picture(props) {
   const { mobileSrc, src, alt } = props;
+  const [show, setShow] = useState(false);
+  const imgRef = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setShow(true);
+          observer.disconnect();
+        }
+      });
+    });
+
+    observer.observe(imgRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <Container>
       <picture>
-        <source media={`(min-width: ${md})`} srcSet={src} />
-        <img src={mobileSrc} alt={alt} loading="lazy" />
+        <source media={`(min-width: ${md})`} srcSet={show ? src : ""} />
+        <img
+          ref={imgRef}
+          src={show ? mobileSrc : ""}
+          alt={alt}
+          loading="lazy"
+        />
       </picture>
     </Container>
   );
