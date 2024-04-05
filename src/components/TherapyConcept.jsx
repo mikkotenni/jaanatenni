@@ -1,4 +1,7 @@
 import styled from "@emotion/styled";
+import { colors } from "../assets/designTokens";
+
+const { tagColor } = colors;
 
 const Container = styled.section`
   margin-top: 2rem;
@@ -6,28 +9,41 @@ const Container = styled.section`
   & > h2:first-of-type {
     margin-top: 0;
   }
+
+  .material-symbols-outlined {
+    vertical-align: middle;
+    margin-right: 0.25rem;
+    color: ${tagColor};
+  }
 `;
 
 export default function TherapyConcept() {
   return (
     <Container id="terapia">
-      <h2>Terapia</h2>
+      <h2>Lyhytterapia</h2>
       <p>
         Lyhytterapia on tutkitusti tehokas tapa tukea mielenterveyttä
         erilaisissa mielen hyvinvoinnin haasteissa. Ratkaisukeskeinen
         lyhytterapia keskittyy tulevaisuuteen ja voimavaroihin. Terapian kestoa
         ei sovita etukäteen, vaan tilannetta arvioidaan yhdessä asiakkaan kanssa
-        jokaisella tapaamiskerralla. Työni tueksi saan itse säännöllisesti
-        työnohjausta.
+        jokaisella tapaamiskerralla.
       </p>
       <p>
-        Pidämme terapiatapaamiset joko etänä, kotonasi tai kotivastaanotollani.
-        Myös kävelyterapia voi olla varteenotettava vaihtoehto, joko samalla
-        lenkkipolulla tai etänä kuulokkeiden kautta.
+        <span className="material-symbols-outlined" aria-hidden="true"> check </span> Pidämme
+        terapiatapaamiset joko etänä, kotonasi tai kotivastaanotollani.
       </p>
       <p>
-        Terapiaan voit tulla yksin, kumppanisi kanssa tai vaikka koko perheen
-        voimin.
+        <span className="material-symbols-outlined" aria-hidden="true"> check </span> Kävelyterapia
+        on varteenotettava vaihtoehto, joko samalla lenkkipolulla tai etänä
+        kuulokkeiden kautta.
+      </p>
+      <p>
+        <span className="material-symbols-outlined" aria-hidden="true"> check </span> Terapiaan
+        voit tulla yksin, kumppanisi kanssa tai vaikka koko perheen voimin.
+      </p>
+      <p>
+        <span className="material-symbols-outlined" aria-hidden="true"> check </span> Työni tueksi
+        saan itse säännöllisesti työnohjausta.
       </p>
     </Container>
   );
