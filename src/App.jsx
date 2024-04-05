@@ -14,7 +14,7 @@ import JaanaJaTinkaMobile from "./assets/jaanajatinkamobile.webp";
 import ContactInformation from "./components/ContactInformation";
 import Picture from "./components/Picture";
 
-const { fontColor, backgroundColor } = colors;
+const { fontColor, backgroundColor, color1 } = colors;
 const { md, xl } = breakpoints;
 
 const globalStyles = css`
@@ -29,6 +29,9 @@ const globalStyles = css`
     color: ${fontColor};
     background-color: ${backgroundColor};
     margin: 0;
+  }
+  a {
+    color: ${color1};
   }
 `;
 const Container = styled.div`

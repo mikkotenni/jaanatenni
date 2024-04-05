@@ -18,11 +18,16 @@ export default function ContactInformation() {
       <h2>Yhteystiedot</h2>
       <p>
         Järjestän terapiatapaamisemme etäyhteydellä, luonasi tai
-        kotivastaanotollani Mäntsälässä. Lähitapaamiset sopivat siis erityisesti
+        kotivastaanotollani{" "}
+        <a href="https://maps.app.goo.gl/bd4bLoW2MFQqgumn7" target="_blank">
+          Mäntsälässä
+        </a>{" "}
+        lähellä paikkakuntia kuten Lahti, Riihimäki, Hyvinkää, Järvenpää,
+        Tuusula, Vantaa ja Helsinki. Lähitapaamiset sopivat siis erityisesti
         sinulle, joka asut Uudellamaalla, Kanta-Hämeessä tai Päijät-Hämeessä.
-        Etätapaamiset sopivat ihan kaikille.
       </p>
-      <p>Ota yhteyttä ja varaa aikasi nyt.</p>
+      <p>Etätapaamiset sopivat ihan kaikille.</p>
+      <p>Ota yhteyttä ja varaa omasi.</p>
       <p>
         <WhatsApp />
       </p>
