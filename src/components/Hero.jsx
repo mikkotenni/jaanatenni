@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react';
 import styled from "@emotion/styled";
 import { breakpoints, colors } from "../assets/designTokens";
 import Mailto from "./reachOutLinks/Mailto";
@@ -9,7 +10,7 @@ const { md } = breakpoints;
 const { color1, color2, color3, color5 } = colors;
 
 const Container = styled.section`
-  background-image: url(${chaiseLongue});
+  background-image: ${(props) => `url(${props.bgImage})`};
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -79,8 +80,28 @@ const Container = styled.section`
 `;
 
 export default function Hero() {
+  const [bgImage, setBgImage] = useState('');
+  const containerRef = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setBgImage(chaiseLongue);
+          observer.disconnect();
+        }
+      });
+    });
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <Container>
+    <Container ref={containerRef} bgImage={bgImage}>
       <h1>Mielenterveyttä ja hyvinvointia lyhytterapialla</h1>
       <div>
         <p>
