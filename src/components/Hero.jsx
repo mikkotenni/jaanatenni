@@ -102,7 +102,7 @@ export default function Hero() {
 
   return (
     <Container ref={containerRef} bgImage={bgImage}>
-      <h1>Mielenterveyttä ja hyvinvointia lyhytterapialla</h1>
+      <h1>Jaana Tenni ratkaisukeskeinen lyhytterapeutti</h1>
       <div>
         <p>
           Ratkaisuja ja voimavaroja elämän eri haasteisiin. Mielenterveyttä ja
