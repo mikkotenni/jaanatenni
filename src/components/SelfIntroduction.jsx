@@ -1,4 +1,7 @@
 import styled from "@emotion/styled";
+import Picture from "./Picture";
+import Jaana from "../assets/jaana.webp";
+import JaanaMobile from "../assets/jaanamobile.webp";
 
 const Container = styled.section`
   margin-top: 2rem;
@@ -12,6 +15,7 @@ export default function SelfIntroduction() {
   return (
     <Container id="jaana">
       <h2>Jaana</h2>
+      <Picture mobileSrc={JaanaMobile} src={Jaana} alt="Jaana" />
       <p>
         Hei! Olen lyhytterapeutiksi opiskeleva sairaanhoitaja sekä
         terveydenhuolto- ja sosiaalialan ammattilainen. Olen työskennellyt

@@ -102,10 +102,10 @@ export default function Hero() {
 
   return (
     <Container ref={containerRef} bgImage={bgImage}>
-      <h1>Jaana Tenni ratkaisukeskeinen lyhytterapeutti</h1>
+      <h1>Ratkaisukeskeinen lyhytterapia</h1>
       <div>
         <p>
-          Ratkaisuja ja voimavaroja elämän eri haasteisiin. Mielenterveyttä ja
+          Ratkaisut ja voimavarat elämän erilaisiin tilanteisiin. Mielenterveyttä ja
           psyykkistä hyvinvointia kannattaa vaalia jo ennen kuin mitään
           suurempia haasteita on ilmaantunutkaan. Varaa ilmainen 15 minuutin
           tutustuminen!

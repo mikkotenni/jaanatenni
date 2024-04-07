@@ -23,7 +23,7 @@ export default function TherapyConcept() {
       <h2>Lyhytterapia</h2>
       <p>
         Lyhytterapia on tutkitusti tehokas tapa tukea mielenterveyttä
-        erilaisissa mielen hyvinvoinnin haasteissa. Ratkaisukeskeinen
+        erilaisissa elämäntilanteissa ja mielen hyvinvoinnin haasteissa. Ratkaisukeskeinen
         lyhytterapia keskittyy tulevaisuuteen ja voimavaroihin. Terapian kestoa
         ei sovita etukäteen, vaan tilannetta arvioidaan yhdessä asiakkaan kanssa
         jokaisella tapaamiskerralla.

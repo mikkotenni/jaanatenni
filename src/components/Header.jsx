@@ -31,10 +31,10 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <a href="#jaana">Jaana</a>
+            <a href="#lyhytterapia">Lyhytterapia</a>
           </li>
           <li>
-            <a href="#lyhytterapia">Lyhytterapia</a>
+            <a href="#jaana">Jaana</a>
           </li>
           <li>
             <a href="#yhteystiedot">Yhteystiedot</a>
