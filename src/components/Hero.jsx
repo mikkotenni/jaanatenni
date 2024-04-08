@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from "react";
 import styled from "@emotion/styled";
 import { breakpoints, colors } from "../assets/designTokens";
 import Mailto from "./reachOutLinks/Mailto";
@@ -80,7 +80,7 @@ const Container = styled.section`
 `;
 
 export default function Hero() {
-  const [bgImage, setBgImage] = useState('');
+  const [bgImage, setBgImage] = useState("");
   const containerRef = useRef();
 
   useEffect(() => {
@@ -102,13 +102,13 @@ export default function Hero() {
 
   return (
     <Container ref={containerRef} bgImage={bgImage}>
-      <h1>Ratkaisukeskeinen lyhytterapia</h1>
+      <h1>Ratkaisukeskeinen lyhytterapeutti Mäntsälässä</h1>
       <div>
         <p>
-          Ratkaisut ja voimavarat elämän erilaisiin tilanteisiin. Mielenterveyttä ja
-          psyykkistä hyvinvointia kannattaa vaalia jo ennen kuin mitään
-          suurempia haasteita on ilmaantunutkaan. Varaa ilmainen 15 minuutin
-          tutustuminen!
+          Ratkaisut ja voimavarat elämän erilaisiin tilanteisiin. Taustani on
+          mielenterveys- sekä perhetyössä ja lasten sekä nuorten parissa.
+          Mielenkiinnon kohteenani on trauma- ja kiintymyssuhdetyöskentely.
+          Varaa ilmainen 15 minuutin tutustuminen!
         </p>
       </div>
       <address>
