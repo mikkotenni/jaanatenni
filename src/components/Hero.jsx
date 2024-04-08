@@ -107,7 +107,7 @@ export default function Hero() {
         <p>
           Ratkaisut ja voimavarat elämän erilaisiin tilanteisiin. Taustani
           lyhytterapeutiksi on mielenterveys- ja perhetyössä sekä lasten ja
-          nuorten parissa. Erityinen mielenkiinnon kohteenani on trauma- ja
+          nuorten parissa. Erityinen mielenkiinnon kohteeni on trauma- ja
           kiintymyssuhdetyöskentely. Varaa ilmainen 15 minuutin tutustuminen!
         </p>
       </div>
