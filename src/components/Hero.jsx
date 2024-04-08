@@ -105,10 +105,10 @@ export default function Hero() {
       <h1>Ratkaisukeskeinen lyhytterapeutti Mäntsälässä</h1>
       <div>
         <p>
-          Ratkaisut ja voimavarat elämän erilaisiin tilanteisiin. Taustani on
-          mielenterveys- sekä perhetyössä ja lasten sekä nuorten parissa.
-          Mielenkiinnon kohteenani on trauma- ja kiintymyssuhdetyöskentely.
-          Varaa ilmainen 15 minuutin tutustuminen!
+          Ratkaisut ja voimavarat elämän erilaisiin tilanteisiin. Taustani
+          lyhytterapeutiksi on mielenterveys- ja perhetyössä sekä lasten ja
+          nuorten parissa. Erityinen mielenkiinnon kohteenani on trauma- ja
+          kiintymyssuhdetyöskentely. Varaa ilmainen 15 minuutin tutustuminen!
         </p>
       </div>
       <address>
