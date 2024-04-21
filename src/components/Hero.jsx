@@ -80,27 +80,19 @@ const Container = styled.section`
   }
 `;
 
-/**
- * Using immediately invoked function expression pattern, top-level await is not
- * available in the configured target environment when building for production.
- */
-let content;
-(async () => {
-  content = await getPosts(3);
-})();
-const fallbackContent = new Map([
-  ["Main heading", "Ratkaisukeskeinen lyhytterapeutti Mäntsälässä"],
-  [
-    "Introduction",
-    "Ratkaisut ja voimavarat elämän erilaisiin tilanteisiin. Taustani lyhytterapeutiksi on mielenterveys- ja perhetyössä sekä lasten ja nuorten parissa. Erityinen mielenkiinnon kohteeni on trauma- ja kiintymyssuhdetyöskentely. Varaa ilmainen 15 minuutin tutustuminen!",
-  ],
-]);
-
 export default function Hero() {
   const [bgImage, setBgImage] = useState("");
+  const [content, setContent] = useState(new Map());
   const containerRef = useRef();
 
   useEffect(() => {
+    const fetchPosts = async () => {
+      const posts = await getPosts(3);
+      setContent(posts);
+    };
+
+    fetchPosts();
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -119,17 +111,9 @@ export default function Hero() {
 
   return (
     <Container ref={containerRef} bgImage={bgImage}>
-      <h1>
-        {content.has("Main heading")
-          ? content.get("Main heading")
-          : fallbackContent.get("Main heading")}
-      </h1>
+      <h1>{content.get("Main heading")}</h1>
       <div>
-        <p>
-          {content.has("Introduction")
-            ? content.get("Introduction")
-            : fallbackContent.get("Main heading")}
-        </p>
+        <p>{content.get("Introduction")}</p>
       </div>
       <address>
         <p>
