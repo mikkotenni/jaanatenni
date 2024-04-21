@@ -80,7 +80,14 @@ const Container = styled.section`
   }
 `;
 
-const content = await getPosts(3);
+/**
+ * Using immediately invoked function expression pattern, top-level await is not
+ * available in the configured target environment when building for production.
+ */
+let content;
+(async () => {
+  content = await getPosts(3);
+})();
 const fallbackContent = new Map([
   ["Main heading", "Ratkaisukeskeinen lyhytterapeutti Mäntsälässä"],
   [
