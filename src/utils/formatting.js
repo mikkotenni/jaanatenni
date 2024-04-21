@@ -49,3 +49,9 @@ export function formatCurrency(price, currency) {
   }
   return new Intl.NumberFormat("fi-FI", obj).format(price);
 }
+
+export function stripHtml(html) {
+  const el = document.createElement("div");
+  el.innerHTML = html;
+  return el.textContent || el.innerText || "";
+}

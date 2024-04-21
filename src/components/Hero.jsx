@@ -5,6 +5,7 @@ import Mailto from "./reachOutLinks/Mailto";
 import Tel from "./reachOutLinks/Tel";
 import WhatsApp from "./reachOutLinks/WhatsApp";
 import chaiseLongue from "../assets/chaiselongue.webp";
+import { getPosts } from "../api/apiFunctions";
 
 const { md } = breakpoints;
 const { color1, color2, color3, color5 } = colors;
@@ -79,6 +80,15 @@ const Container = styled.section`
   }
 `;
 
+const content = await getPosts(3);
+const fallbackContent = new Map([
+  ["Main heading", "Ratkaisukeskeinen lyhytterapeutti Mäntsälässä"],
+  [
+    "Introduction",
+    "Ratkaisut ja voimavarat elämän erilaisiin tilanteisiin. Taustani lyhytterapeutiksi on mielenterveys- ja perhetyössä sekä lasten ja nuorten parissa. Erityinen mielenkiinnon kohteeni on trauma- ja kiintymyssuhdetyöskentely. Varaa ilmainen 15 minuutin tutustuminen!",
+  ],
+]);
+
 export default function Hero() {
   const [bgImage, setBgImage] = useState("");
   const containerRef = useRef();
@@ -102,13 +112,16 @@ export default function Hero() {
 
   return (
     <Container ref={containerRef} bgImage={bgImage}>
-      <h1>Ratkaisukeskeinen lyhytterapeutti Mäntsälässä</h1>
+      <h1>
+        {content.has("Main heading")
+          ? content.get("Main heading")
+          : fallbackContent.get("Main heading")}
+      </h1>
       <div>
         <p>
-          Ratkaisut ja voimavarat elämän erilaisiin tilanteisiin. Taustani
-          lyhytterapeutiksi on mielenterveys- ja perhetyössä sekä lasten ja
-          nuorten parissa. Erityinen mielenkiinnon kohteeni on trauma- ja
-          kiintymyssuhdetyöskentely. Varaa ilmainen 15 minuutin tutustuminen!
+          {content.has("Introduction")
+            ? content.get("Introduction")
+            : fallbackContent.get("Main heading")}
         </p>
       </div>
       <address>
