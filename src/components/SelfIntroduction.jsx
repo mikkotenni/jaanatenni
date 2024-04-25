@@ -15,7 +15,6 @@ export default function SelfIntroduction() {
   return (
     <Container id="jaana">
       <h2>Jaana</h2>
-      <Picture mobileSrc={JaanaMobile} src={Jaana} alt="Jaana" />
       <p>
         Hei! Olen lyhytterapeutiksi opiskeleva sairaanhoitaja sekä
         terveydenhuolto- ja sosiaalialan ammattilainen. Olen työskennellyt
@@ -23,6 +22,7 @@ export default function SelfIntroduction() {
         mielenkiinnon kohteena ja lisäkoulutuksen aiheena on ollut trauma- ja
         kiintymyssuhdetyöskentely.
       </p>
+      <Picture mobileSrc={JaanaMobile} src={Jaana} alt="Jaana" />
     </Container>
   );
 }

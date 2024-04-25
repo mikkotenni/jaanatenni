@@ -26,8 +26,8 @@ export default function ContactInformation() {
       </p>
       <p>
         Lähitapaamiset sopivat siis erityisesti sinulle, joka asut
-        Uudellamaalla, Kanta-Hämeessä tai Päijät-Hämeessä. Voimme myös sopia,
-        että tulen luoksesi.
+        Uudellamaalla, Kanta-Hämeessä tai Päijät-Hämeessä. Tapaaminen voidaan
+        järjestää myös sinun luonasi.
       </p>
       <p>Etätapaamiset sopivat ihan kaikille.</p>
       <p>
