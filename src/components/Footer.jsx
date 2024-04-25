@@ -58,13 +58,6 @@ export default function Footer() {
             Metsäpalvelu Kyrö
           </a>
           <a
-            href="https://www.karhupaintball.fi/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Karhu Paintball
-          </a>
-          <a
             href="https://www.reettakyro.fi/"
             target="_blank"
             rel="noopener noreferrer"

@@ -111,9 +111,9 @@ export default function Hero() {
 
   return (
     <Container ref={containerRef} bgImage={bgImage}>
-      <h1>{content.get("Main heading")}</h1>
+      <h1>{content.get("Main heading") || "Ratkaisukeskeinen lyhytterapeutti Mäntsälässä"}</h1>
       <div>
-        <p>{content.get("Introduction")}</p>
+        <p>{content.get("Introduction") || "Ratkaisut ja voimavarat elämän erilaisiin tilanteisiin. Taustani lyhytterapeutiksi on mielenterveys- ja perhetyössä sekä lasten ja nuorten parissa. Erityinen mielenkiinnon kohteeni on trauma- ja kiintymyssuhdetyöskentely. Varaa ilmainen 15 minuutin tutustuminen!"}</p>
       </div>
       <address>
         <p>
