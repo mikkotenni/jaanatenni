@@ -22,11 +22,14 @@ export default function ContactInformation() {
           Mäntsälässä
         </a>{" "}
         lähellä paikkakuntia kuten Lahti, Riihimäki, Hyvinkää, Järvenpää,
-        Tuusula, Vantaa ja Helsinki. Lähitapaamiset sopivat siis erityisesti
-        sinulle, joka asut Uudellamaalla, Kanta-Hämeessä tai Päijät-Hämeessä.
+        Tuusula, Vantaa ja Helsinki.
+      </p>
+      <p>
+        Lähitapaamiset sopivat siis erityisesti sinulle, joka asut
+        Uudellamaalla, Kanta-Hämeessä tai Päijät-Hämeessä. Voimme myös sopia,
+        että tulen luoksesi.
       </p>
       <p>Etätapaamiset sopivat ihan kaikille.</p>
-      <p>Ota yhteyttä ja varaa omasi.</p>
       <p>
         <WhatsApp />
       </p>
