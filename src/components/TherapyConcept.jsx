@@ -33,17 +33,17 @@ export default function TherapyConcept() {
         terapiatapaamiset joko etänä, sinun luonasi tai vasta valmistuneella kotivastaanotollani.
       </p>
       <p>
+        <span className="material-symbols-outlined" aria-hidden="true"> check </span> Kävelyterapia
+        on hauska vaihtoehto, joko samalla lenkkipolulla tai etänä
+        kuulokkeiden kautta.
+      </p>
+      <p>
         <span className="material-symbols-outlined" aria-hidden="true"> check </span> Terapiaan
         voit tulla yksin, kumppanisi kanssa tai vaikka koko perheen voimin.
       </p>
       <p>
         <span className="material-symbols-outlined" aria-hidden="true"> check </span> Työni tueksi
         saan itse säännöllisesti työnohjausta.
-      </p>
-      <p>
-        <span className="material-symbols-outlined" aria-hidden="true"> check </span> Kävelyterapia
-        on varteenotettava vaihtoehto, joko samalla lenkkipolulla tai etänä
-        kuulokkeiden kautta.
       </p>
       <p>
         <span className="material-symbols-outlined" aria-hidden="true"> check </span> Etäyhteys on
