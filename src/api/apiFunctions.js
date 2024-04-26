@@ -6,7 +6,7 @@ import { stripHtml } from "../utils/formatting.js";
  * @returns {Promise<Map<string, string>>} as posts
  */
 export async function getPosts(category) {
-  const response = await fetch("http://cms.jaanatenni.fi/wp-json/wp/v2/posts");
+  const response = await fetch("https://cms.jaanatenni.fi/wp-json/wp/v2/posts");
   if (!response.ok) {
     console.error(`Content could not be fetched: ${response.status}`);
     return new Map();
