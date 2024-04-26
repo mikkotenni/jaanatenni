@@ -48,7 +48,7 @@ export default function Footer() {
       Tervetuloa!
       <span className="material-symbols-outlined">chair</span>
       <Partners>
-        <h4>Yhteistyökumppanit</h4>
+        <h4>Paikallista yrittäjyyttä tukien</h4>
         <p>
           <a
             href="https://metsapalvelukyro.fi/"
