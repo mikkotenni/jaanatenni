@@ -80,6 +80,14 @@ const Container = styled.section`
   }
 `;
 
+const fallbackContent = new Map([
+  ["Main heading", "Ratkaisukeskeinen lyhytterapeutti Mäntsälässä"],
+  [
+    "Introduction",
+    "Ratkaisut ja voimavarat elämän erilaisiin tilanteisiin. Taustani lyhytterapeutiksi on mielenterveys- ja perhetyössä sekä lasten ja nuorten parissa. Erityinen mielenkiinnon kohteeni on trauma- ja kiintymyssuhdetyöskentely. Varaa ilmainen 15 minuutin tutustuminen!",
+  ],
+]);
+
 export default function Hero() {
   const [bgImage, setBgImage] = useState("");
   const [content, setContent] = useState(new Map());
@@ -111,9 +119,13 @@ export default function Hero() {
 
   return (
     <Container ref={containerRef} bgImage={bgImage}>
-      <h1>{content.get("Main heading") || "Ratkaisukeskeinen lyhytterapeutti Mäntsälässä"}</h1>
+      <h1>
+        {content.get("Main heading") || fallbackContent.get("Main heading")}
+      </h1>
       <div>
-        <p>{content.get("Introduction") || "Ratkaisut ja voimavarat elämän erilaisiin tilanteisiin. Taustani lyhytterapeutiksi on mielenterveys- ja perhetyössä sekä lasten ja nuorten parissa. Erityinen mielenkiinnon kohteeni on trauma- ja kiintymyssuhdetyöskentely. Varaa ilmainen 15 minuutin tutustuminen!"}</p>
+        <p>
+          {content.get("Introduction") || fallbackContent.get("Introduction")}
+        </p>
       </div>
       <address>
         <p>
