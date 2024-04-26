@@ -7,7 +7,7 @@ import WhatsApp from "./reachOutLinks/WhatsApp";
 import chaiseLongue from "../assets/chaiselongue.webp";
 import { getPosts } from "../api/apiFunctions";
 
-const { md } = breakpoints;
+const { md, xl } = breakpoints;
 const { color1, color2, color3, color5 } = colors;
 
 const Container = styled.section`
@@ -20,7 +20,10 @@ const Container = styled.section`
   background-color: ${color3};
 
   @media (min-width: ${md}) {
-    padding: 6rem 3rem;
+    padding-bottom: 6rem 3rem 6rem;
+  }
+  @media (min-width: ${xl}) {
+    padding: 12rem 3rem 12rem;
   }
 
   h1 {
@@ -37,6 +40,9 @@ const Container = styled.section`
 
     @media (min-width: ${md}) {
       font-size: 2.25rem;
+    }
+    @media (min-width: ${xl}) {
+      font-size: 3rem;
     }
   }
 
