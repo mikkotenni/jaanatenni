@@ -27,12 +27,12 @@ export default function Prices() {
   return (
     <article>
       <h3>Hinnat ja maksutavat</h3>
-      <Tag>Nyt opiskelijahinta</Tag>
+      <Tag>Nyt vain</Tag>
       <HeroText>
         {formatCurrency(price, currency)}
         <span>/{therapySessionDuration} (sis. alv 24%)</span>
       </HeroText>
-      <p>Maksutavat MobilePay, tilisiirto ja käteinen.</p>
+      <p>Maksutavat MobilePay, lasku, tilisiirto ja käteinen.</p>
       <p>Varaa ilmainen 15 minuutin tutustuminen.</p>
     </article>
   );
