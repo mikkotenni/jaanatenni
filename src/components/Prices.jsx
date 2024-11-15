@@ -4,7 +4,7 @@ import { prices } from "../../config.json";
 import { formatCurrency } from "../utils/formatting";
 
 const { tagColor } = colors;
-const { price, currency, therapySessionDuration } = prices;
+const { price, currency, therapySessionDuration, vat } = prices;
 
 const Tag = styled.h4`
   margin: 0;
@@ -30,7 +30,7 @@ export default function Prices() {
       <Tag>Nyt vain</Tag>
       <HeroText>
         {formatCurrency(price, currency)}
-        <span>/{therapySessionDuration} (sis. alv 24%)</span>
+        <span>/{therapySessionDuration} (sis. alv {vat}%)</span>
       </HeroText>
       <p>Maksutavat MobilePay, lasku, tilisiirto ja käteinen.</p>
       <p>Varaa ilmainen 15 minuutin tutustuminen.</p>

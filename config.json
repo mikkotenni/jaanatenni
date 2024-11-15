@@ -6,7 +6,8 @@
   "prices": {
     "price": 47,
     "currency": "EUR",
-    "therapySessionDuration": "45 min"
+    "therapySessionDuration": "45 min",
+    "vat": 25.5
   },
   "siteSettings": {}
 }
