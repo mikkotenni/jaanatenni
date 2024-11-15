@@ -16,8 +16,8 @@ export default function SelfIntroduction() {
     <Container id="jaana">
       <h2>Jaana</h2>
       <p>
-        Hei! Olen lyhytterapeutti ja psykoterapeutiksi opiskeleva sairaanhoitaja sekä
-        terveydenhuolto- ja sosiaalialan ammattilainen. Olen työskennellyt
+        Hei! Olen lyhytterapeutti, psykoterapeuttiopiskelija
+        sekä terveydenhuolto- ja sosiaalialan ammattilainen. Olen työskennellyt
         lasten, nuorten ja perheiden parissa sekä mielenterveysalalla. Erityisenä
         mielenkiinnon kohteena ja lisäkoulutuksen aiheena on ollut trauma- ja
         kiintymyssuhdetyöskentely.
