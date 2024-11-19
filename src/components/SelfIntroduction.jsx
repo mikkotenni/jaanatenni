@@ -17,7 +17,7 @@ const fallbackContent = new Map([
   ["Heading", "Jaana"],
   [
     "Introduction",
-    "Hei! Olen valmistunut lyhytterapeutti ja psykoterapeuttiopiskelija. Olen työskennellyt lasten, nuorten ja perheiden parissa sekä mielenterveysalalla. Erityisenä mielenkiinnon kohteena ja lisäkoulutuksen aiheena on ollut trauma- ja kiintymyssuhdetyöskentely.",
+    "Hei! Olen ratkaisukeskeinen lyhytterapeutti. Olen työskennellyt perhetyön puitteissa lasten, nuorten ja perheiden parissa sekä mielenterveysalalla. Opiskelen psykoterapeutiksi. Erityisenä mielenkiinnon kohteena ja lisäkoulutuksen aiheena on ollut trauma- ja kiintymyssuhdetyöskentely.",
   ],
 ]);
 
