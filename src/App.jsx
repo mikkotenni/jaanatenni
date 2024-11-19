@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Global, css } from "@emotion/react";
 import { colors, breakpoints } from "./assets/designTokens";
 import Header from "./components/Header";
@@ -11,6 +12,7 @@ import JaanaJaTinka from "./assets/jaanajatinka.webp";
 import JaanaJaTinkaMobile from "./assets/jaanajatinkamobile.webp";
 import ContactInformation from "./components/ContactInformation";
 import Picture from "./components/Picture";
+import { getPosts } from "./api/apiFunctions";
 
 const { fontColor, backgroundColor, color1 } = colors;
 const { md, xl } = breakpoints;
@@ -64,9 +66,33 @@ const JaanaJaTinkaMdLg = styled.div`
     display: block;
   }
 `;
+const ServiceIsUnavailable = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: ${fontColor};
+  background-color: ${backgroundColor};
+`;
 
 function App() {
-  return (
+  // Relies on evaluation: empty string is falsy, non-empty string is truthy.
+  const [isUnavailable, setIsUnavailable] = useState('...');
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      const posts = await getPosts(6);
+      setIsUnavailable(posts.get("isUnavailable"));
+    };
+
+    fetchPosts();
+  }, []);
+
+  return isUnavailable ? (
+    <ServiceIsUnavailable>
+      <h3>{isUnavailable}</h3>
+    </ServiceIsUnavailable>
+  ) : (
     <>
       <Global styles={globalStyles} />
       <Header />
