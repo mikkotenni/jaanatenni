@@ -39,6 +39,9 @@ export default function Header() {
           <li>
             <a href="#yhteystiedot">Yhteystiedot</a>
           </li>
+          <li>
+            <a href="#hinnat">Hinnat</a>
+          </li>
         </ul>
       </nav>
     </Container>

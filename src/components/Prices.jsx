@@ -26,7 +26,7 @@ const HeroText = styled.p`
 export default function Prices() {
   return (
     <article>
-      <h3>Hinnat ja maksutavat</h3>
+      <h3 id="hinnat">Hinnat ja maksutavat</h3>
       <Tag>Nyt vain</Tag>
       <HeroText>
         {formatCurrency(price, currency)}

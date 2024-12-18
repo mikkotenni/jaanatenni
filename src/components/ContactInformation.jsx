@@ -15,7 +15,7 @@ const Container = styled.address`
 export default function ContactInformation() {
   return (
     <Container id="yhteystiedot">
-      <h2>Yhteystiedot</h2>
+      <h3>Yhteystiedot</h3>
       <p>
         Kotivastaanottoni sijaitsee{" "}
         <a href="https://maps.app.goo.gl/bd4bLoW2MFQqgumn7" target="_blank">
