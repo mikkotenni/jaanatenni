@@ -14,10 +14,10 @@ const Container = styled.section`
 `;
 
 const fallbackContent = new Map([
-  ["Heading", "Jaana"],
+  ["Heading", "Kognitiivinen käyttäytymispsykoterapia"],
   [
     "Introduction",
-    "Hei! Olen ratkaisukeskeinen lyhytterapeutti. Olen työskennellyt perhetyön puitteissa lasten, nuorten ja perheiden parissa sekä mielenterveysalalla. Opiskelen psykoterapeutiksi. Erityisenä mielenkiinnon kohteena ja lisäkoulutuksen aiheena on ollut trauma- ja kiintymyssuhdetyöskentely.",
+    "Tarjoan kognitiivista käyttäytymispsykoterapiaa koulutusterapiana sellaisiin mielenterveyden haasteisiin, joihin ei välttämättä päästä lyhytterapeuttisella työskentelyllä käsiksi. Saan työni tueksi säännöllisesti työnohjausta, jossa käsittelen koulutuspsykoterapeuttien ohjauksessa terapiassa esiin nousseita asioita luottamuksella ja anonyymisti. Tulen saamaan Kela-pätevyyden niin aikuisten kuin lasten ja nuortenkin psykoterapeuttina, joten myös koulutusasiakkaat tulevat olemaan kaikista näistä ikäryhmistä.",
   ],
 ]);
 
@@ -34,7 +34,7 @@ export default function SelfIntroduction() {
   }, []);
 
   return (
-    <Container id="jaana">
+    <Container id="psykoterapia">
       <h2>{content.get("Heading") || fallbackContent.get("Heading")}</h2>
       <p>
         {content.get("Introduction") || fallbackContent.get("Introduction")}
