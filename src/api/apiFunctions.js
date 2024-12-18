@@ -39,7 +39,11 @@ export async function getPosts(category) {
     }
 
     posts = posts.reduce((map, { title, content }) => {
-      map.set(stripHtml(title.rendered), stripHtml(content.rendered));
+      if (title.rendered !== "Bulleted list") {
+        map.set(stripHtml(title.rendered), stripHtml(content.rendered));
+      } else {
+        map.set(stripHtml(title.rendered), content.rendered);
+      }
       return map;
     }, new Map());
   }

@@ -25,6 +25,10 @@ const fallbackContent = new Map([
     "Concept",
     "Lyhytterapia on tutkitusti tehokas tapa tukea mielenterveyttä erilaisissa elämäntilanteissa ja mielen hyvinvoinnin haasteissa. Ratkaisukeskeinen lyhytterapia keskittyy tulevaisuuteen ja voimavaroihin. Terapian kestoa ei sovita etukäteen, vaan tilannetta arvioidaan yhdessä asiakkaan kanssa jokaisella tapaamiskerralla.",
   ],
+  [
+    "Bulleted list",
+    "<p>Pidämme terapiatapaamiset joko etänä, sinun luonasi tai vasta valmistuneella kotivastaanotollani.</p> <p>Kävelyterapia on hauska vaihtoehto, joko samalla lenkkipolulla tai etänä kuulokkeiden kautta.</p> <p>Terapiaan voit tulla yksin, kumppanisi kanssa tai vaikka koko perheen voimin.</p> <p>Työni tueksi saan itse säännöllisesti työnohjausta.</p> <p>Etäyhteys on helppo käyttää.</p>",
+  ],
 ]);
 
 export default function TherapyConcept() {
@@ -39,50 +43,25 @@ export default function TherapyConcept() {
     fetchPosts();
   }, []);
 
+  const bullets = (
+    content.get("Bulleted list") || fallbackContent.get("Bulleted list")
+  )
+    .split(/<p>|<\/p>/)
+    .filter((text) => text.trim().length > 0)
+    .map((text, index) => (
+      <p key={index + text.trim().slice(0, 5)}>
+        <span className="material-symbols-outlined" aria-hidden="true">
+          check
+        </span>{" "}
+        {text.trim()}
+      </p>
+    ));
+
   return (
     <Container id="lyhytterapia">
       <h2>{content.get("Heading") || fallbackContent.get("Heading")}</h2>
-      <p>
-        {content.get("Concept") || fallbackContent.get("Concept")}
-      </p>
-      <p>
-        <span className="material-symbols-outlined" aria-hidden="true">
-          {" "}
-          check{" "}
-        </span>{" "}
-        Pidämme terapiatapaamiset joko etänä, sinun luonasi tai vasta
-        valmistuneella kotivastaanotollani.
-      </p>
-      <p>
-        <span className="material-symbols-outlined" aria-hidden="true">
-          {" "}
-          check{" "}
-        </span>{" "}
-        Kävelyterapia on hauska vaihtoehto, joko samalla lenkkipolulla tai etänä
-        kuulokkeiden kautta.
-      </p>
-      <p>
-        <span className="material-symbols-outlined" aria-hidden="true">
-          {" "}
-          check{" "}
-        </span>{" "}
-        Terapiaan voit tulla yksin, kumppanisi kanssa tai vaikka koko perheen
-        voimin.
-      </p>
-      <p>
-        <span className="material-symbols-outlined" aria-hidden="true">
-          {" "}
-          check{" "}
-        </span>{" "}
-        Työni tueksi saan itse säännöllisesti työnohjausta.
-      </p>
-      <p>
-        <span className="material-symbols-outlined" aria-hidden="true">
-          {" "}
-          check{" "}
-        </span>{" "}
-        Etäyhteys on helppo käyttää.
-      </p>
+      <p>{content.get("Concept") || fallbackContent.get("Concept")}</p>
+      {bullets}
     </Container>
   );
 }
