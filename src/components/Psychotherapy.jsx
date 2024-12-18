@@ -21,7 +21,7 @@ const fallbackContent = new Map([
   ],
 ]);
 
-export default function SelfIntroduction() {
+export default function Psychotherapy() {
   const [content, setContent] = useState(new Map());
 
   useEffect(() => {

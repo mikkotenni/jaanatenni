@@ -4,7 +4,7 @@ import { colors, breakpoints } from "./assets/designTokens";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
-import SelfIntroduction from "./components/SelfIntroduction";
+import Psychotherapy from "./components/Psychotherapy";
 import Prices from "./components/Prices";
 import TherapyConcept from "./components/TherapyConcept";
 import styled from "@emotion/styled";
@@ -104,7 +104,7 @@ function App() {
             <Prices />
           </div>
           <div>
-            <SelfIntroduction />
+            <Psychotherapy />
           </div>
           <div>
             <ContactInformation />
