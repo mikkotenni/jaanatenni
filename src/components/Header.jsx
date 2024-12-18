@@ -23,6 +23,15 @@ const Container = styled.header`
     color: ${color2};
     text-decoration: none;
   }
+
+  .not-in-mobile {
+    display: none;
+  }
+  @media (min-width: ${md}) {
+    .not-in-mobile {
+      display: block;
+    }
+  }
 `;
 
 export default function Header() {
@@ -39,7 +48,7 @@ export default function Header() {
           <li>
             <a href="#yhteystiedot">Yhteystiedot</a>
           </li>
-          <li>
+          <li className="not-in-mobile">
             <a href="#hinnat">Hinnat</a>
           </li>
         </ul>
