@@ -61,7 +61,6 @@ export default function TherapyConcept() {
     <Container id="lyhytterapia">
       <h2>{content.get("Heading") || fallbackContent.get("Heading")}</h2>
       <p>{content.get("Concept") || fallbackContent.get("Concept")}</p>
-      {bullets}
     </Container>
   );
 }

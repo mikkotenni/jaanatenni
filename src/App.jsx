@@ -54,12 +54,12 @@ const GridContainer = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
   }
 `;
-const JaanaJaTinkaSmXl = styled.div`
+const JaanaWithTinkaSmXl = styled.div`
   @media (min-width: ${md}) and (max-width: ${xl}) {
     display: none;
   }
 `;
-const JaanaJaTinkaMdLg = styled.div`
+const JaanaWithTinkaMdLg = styled.div`
   display: none;
 
   @media (min-width: ${md}) and (max-width: ${xl}) {
@@ -101,28 +101,28 @@ function App() {
         <GridContainer>
           <div>
             <TherapyConcept />
-            <Prices />
           </div>
           <div>
             <Psychotherapy />
           </div>
           <div>
             <ContactInformation />
-            <JaanaJaTinkaSmXl>
+            <Prices />
+            <JaanaWithTinkaSmXl>
               <Picture
                 mobileSrc={JaanaJaTinkaMobile}
                 src={JaanaJaTinka}
                 alt="Jaana ja terapiakoira Tinka"
               />
-            </JaanaJaTinkaSmXl>
+            </JaanaWithTinkaSmXl>
           </div>
-          <JaanaJaTinkaMdLg>
+          <JaanaWithTinkaMdLg>
             <Picture
               mobileSrc={JaanaJaTinkaMobile}
               src={JaanaJaTinka}
               alt="Jaana ja terapiakoira Tinka"
             />
-          </JaanaJaTinkaMdLg>
+          </JaanaWithTinkaMdLg>
         </GridContainer>
       </Container>
       <Footer />

@@ -4,10 +4,17 @@
     "email": "lyhytterapia@jaanatenni.fi"
   },
   "prices": {
-    "price": 47,
     "currency": "EUR",
-    "therapySessionDuration": "45 min",
-    "vat": 25.5
+    "therapy": {
+      "price": 59,
+      "duration": "45 min",
+      "vat": 25.5
+    },
+    "psychotherapy": {
+      "price": 47,
+      "duration": "45 min",
+      "vat": 25.5
+    }
   },
   "siteSettings": {}
 }

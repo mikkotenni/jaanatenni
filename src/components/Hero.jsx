@@ -5,6 +5,7 @@ import Mailto from "./reachOutLinks/Mailto";
 import Tel from "./reachOutLinks/Tel";
 import WhatsApp from "./reachOutLinks/WhatsApp";
 import chaiseLongue from "../assets/chaiselongue.webp";
+import chaiseLongueYule from "../assets/chaiselongueYule.webp";
 import { getPosts } from "../api/apiFunctions";
 
 const { md, xl } = breakpoints;
@@ -94,6 +95,13 @@ const fallbackContent = new Map([
   ],
 ]);
 
+function isInYulePeriod() {
+  const now = new Date();
+  const start = new Date(now.getFullYear(), 11, 12); // December 12
+  const end = new Date(now.getFullYear() + 1, 0, 2); // January 2
+  return now >= start && now < end;
+}
+
 export default function Hero() {
   const [bgImage, setBgImage] = useState("");
   const [content, setContent] = useState(new Map());
@@ -110,7 +118,7 @@ export default function Hero() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          setBgImage(chaiseLongue);
+          setBgImage(isInYulePeriod() ? chaiseLongueYule : chaiseLongue);
           observer.disconnect();
         }
       });
