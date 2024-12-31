@@ -15,7 +15,7 @@ const Container = styled.a`
 
 export default function WhatsApp() {
   return (
-    <Container href="https://wa.me/358442350334?text=Kerro%20lisää%20lyhytterapiasta!">
+    <Container href="https://wa.me/358442350334?text=Kertoisitko%20lisää%20lyhytterapiasta%20tai%20koulutuspsykoterapiasta?">
       <span className="material-symbols-outlined" aria-label="lähetä WhatsApp viesti">
         <svg
           xmlns="http://www.w3.org/2000/svg"

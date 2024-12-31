@@ -17,12 +17,12 @@ export default function ContactInformation() {
     <Container id="yhteystiedot">
       <h3>Yhteystiedot</h3>
       <p>
-        Kotivastaanottoni sijaitsee{" "}
+        Kotivastaanottoni sijaitsee junaradan ja hyvien autoyhteyksien varrella{" "}
         <a href="https://maps.app.goo.gl/bd4bLoW2MFQqgumn7" target="_blank">
           Mäntsälässä
-        </a>{" "}
-        lähellä paikkakuntia kuten Lahti, Riihimäki, Hyvinkää, Järvenpää,
-        Tuusula, Vantaa ja Helsinki.
+        </a>
+        . Se on lähellä paikkakuntia kuten Lahti, Riihimäki, Hyvinkää,
+        Järvenpää, Tuusula, Vantaa ja Helsinki.
       </p>
       <p>
         Lähitapaamiset sopivat siis erityisesti sinulle, joka asut
@@ -39,9 +39,7 @@ export default function ContactInformation() {
       <p>
         <Mailto />
       </p>
-      <p>
-        Y-tunnus 2560935-7
-      </p>
+      <p>Y-tunnus 2560935-7</p>
     </Container>
   );
 }
