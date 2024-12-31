@@ -39,6 +39,9 @@ export default function ContactInformation() {
       <p>
         <Mailto />
       </p>
+      <p>
+        Y-tunnus 2560935-7
+      </p>
     </Container>
   );
 }

@@ -29,7 +29,7 @@ export default function Prices() {
   return (
     <article>
       <h3 id="hinnat">Hinnat ja maksutavat</h3>
-      <p>Maksutavat MobilePay, lasku, tilisiirto ja käteinen. Ilmainen 15 minuutin tutustuminen.</p>
+      <p>Maksat kätevästi laskulla. Tutustumistapaaminen veloituksetta.</p>
       <h4>Lyhytterapia</h4>
       <HeroText>
         {formatCurrency(therapy.price, currency)}
